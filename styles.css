@@ -1,1 +1,184 @@
+body {
+    font-family: 'Comic Neue', cursive, sans-serif; /* Default font */
+    margin: 0;
+    padding: 0;
+    background-color: #FEFBD8; /* Pale cream background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all items horizontally */
+    font-size: 20px; /* Base font size for body */
+}
 
+/* Header Styling */
+header {
+    background-color: #BB9AB1; /* Soft mauve */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Full width */
+}
+
+h1 {
+    color: white; /* Set color to white */
+    background-color: #BB9AB1; /* Optional: add a soft mauve background for contrast */
+    padding: 20px; /* Add padding for better visibility */
+    border-radius: 5px; /* Rounded corners */
+    font-family: 'Caveat Brush', cursive; /* Apply Caveat Brush font */
+    font-size: 48px; /* Larger font size for h1 */
+}
+
+/* Navigation Styling */
+nav {
+    display: flex; /* Use Flexbox for navigation */
+    justify-content: center; /* Center items horizontally */
+    margin: 10px 0; /* Add margin for spacing */
+    background-color: #987D9A; /* Muted lavender for nav background */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Use Flexbox for the list */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* White text for better contrast */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 22px; /* Larger font size for navigation links */
+}
+
+nav a:hover {
+    background-color: #EECEB9; /* Light peach for hover */
+    color: #333; /* Dark text on hover */
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    max-width: 800px; /* Limit width for better readability */
+    text-align: center; /* Center text for main content */
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #EECEB9; /* Light peach for sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-child(even) {
+    background-color: #BB9AB1; /* Alternating soft mauve */
+    color: white; /* White text for better contrast on mauve */
+}
+
+section h2 {
+    color: #FEFBD8; /* Match the pale cream background */
+    background-color: #BB9AB1; /* Optional: add a soft mauve background for contrast */
+    padding: 10px; /* Add padding for better visibility */
+    border-radius: 5px; /* Rounded corners */
+    font-family: 'Caveat Brush', cursive; /* Apply Caveat Brush font */
+    font-size: 36px; /* Larger font size for h2 */
+}
+
+/* Weekly Schedule List */
+ul {
+    list-style-type: square; /* Square bullets for list */
+    padding-left: 20px;
+    text-align: left; /* Align list items to the left */
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Center gallery items */
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #BB9AB1; /* Soft mauve */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+table {
+    width: 100%; /* Full width */
+    border-collapse: separate; /* Merge borders *//* Use separate borders for better effects */
+    margin-top: 20px; /* Space above the table */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow of rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+th, td {
+    border: 1px solid #000000; /* Soft coral border for table cells */
+    padding: 12px; /* Padding for cells */
+    text-align: center; /* Align text to the left */
+    font-size: 20px; /* Font size for better readability */
+}
+td {
+    color: black; /* Set text color to black */
+}
+
+th {
+    background-color: #9c6f98; /* Soft coral for header */
+    color: white; /* White text for header */
+    font-weight: bold; /* Bold text for header */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e1d2e1; /* Light peach for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #eaebce; /* White for odd rows */
+}
+
+tbody tr:hover {
+    background-color: #AEEEEE; /* Soft mint for hover effect */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+tbody td:first-child {
+    font-weight: bold; /* Make the day names bold */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    table {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    nav ul li {
+        display: block; /* Display list items as blocks */
+        margin: 10px 0; /* Space between list items */
+    }
+
+    .gallery {
+        flex-direction: column;/* Display gallery items vertically */
+        align-items: center;/* Center gallery items */
+    }
+}
